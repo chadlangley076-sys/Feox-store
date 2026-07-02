@@ -3,84 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feox Hat Store - Premium Hats</title>
+    <title>Feox Hats - Premium Brown Trucker Hats with Leather Patch</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Feox Hats</div>
-            <ul class="nav-links">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-hat-cowboy"></i>
+                <span>FEOX HATS</span>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#cart" class="cart-icon">🛒 Cart</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Feox Hats</h1>
-                <p>Discover premium quality hats for every style</p>
-                <button class="cta-btn">Shop Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <!-- Products Section -->
-        <section id="products" class="products">
-            <h2>Our Collection</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image">🎩</div>
-                    <h3>Classic Top Hat</h3>
-                    <p class="price">$49.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>RIDE THE RANGE WITH STYLE</h1>
+            <p>Premium Brown Trucker Hats with Authentic Leather Patches</p>
+            <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Welcome to Feox Hats</h2>
+                    <p>Est. 2024</p>
+                    <p>
+                        At Feox Hats, we believe in crafting more than just headwear—we create a lifestyle. 
+                        Our brown trucker hats embody the spirit of the American ranch, combining classic 
+                        cowboy aesthetics with modern comfort and durability.
+                    </p>
+                    <p>
+                        Each hat features a premium leather patch, handcrafted to tell your story. Whether 
+                        you're working the land, hitting the road, or simply embracing the cowboy culture, 
+                        Feox Hats are built to last through every adventure.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Authentic Leather</p>
+                        </div>
+                        <div class="stat">
+                            <h3>∞</h3>
+                            <p>Durability Promise</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Cowboys</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">🧢</div>
-                    <h3>Baseball Cap</h3>
-                    <p class="price">$29.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">🎓</div>
-                    <h3>Graduation Cap</h3>
-                    <p class="price">$39.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">👒</div>
-                    <h3>Summer Hat</h3>
-                    <p class="price">$34.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                <div class="about-image">
+                    <div class="hat-illustration">
+                        <i class="fas fa-hat-cowboy"></i>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2>About Feox Hats</h2>
-            <p>At Feox Hats, we believe that the right hat completes any outfit. Our collection features premium quality hats crafted with attention to detail and style. Each hat in our store is selected to meet the highest standards of comfort and fashion.</p>
-        </section>
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Collection</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="hat-showcase brown">
+                            <i class="fas fa-hat-cowboy"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Rancher</h3>
+                        <p class="product-desc">The timeless brown trucker with our signature leather patch</p>
+                        <div class="product-features">
+                            <span class="feature"><i class="fas fa-leaf"></i> Leather Patch</span>
+                            <span class="feature"><i class="fas fa-wind"></i> Breathable Mesh</span>
+                        </div>
+                        <p class="price">$49.99</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Get in Touch</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </section>
-    </main>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="hat-showcase brown-dark">
+                            <i class="fas fa-hat-cowboy"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Saddle Brown Premium</h3>
+                        <p class="product-desc">Rich, deep brown with embossed leather patch detailing</p>
+                        <div class="product-features">
+                            <span class="feature"><i class="fas fa-leaf"></i> Embossed Leather</span>
+                            <span class="feature"><i class="fas fa-star"></i> Premium Quality</span>
+                        </div>
+                        <p class="price">$59.99</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
 
-    <footer>
-        <p>&copy; 2026 Feox Hats. All rights reserved.</p>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="hat-showcase brown-light">
+                            <i class="fas fa-hat-cowboy"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Desert Sun Edition</h3>
+                        <p class="product-desc">Lighter brown for those sunny days on the range</p>
+                        <div class="product-features">
+                            <span class="feature"><i class="fas fa-sun"></i> UV Protection</span>
+                            <span class="feature"><i class="fas fa-leaf"></i> Leather Patch</span>
+                        </div>
+                        <p class="price">$54.99</p>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Feox?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Authentic Leather Patch</h3>
+                    <p>Hand-selected leather patches that age beautifully and tell your story</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-droplets"></i>
+                    </div>
+                    <h3>Weather Resistant</h3>
+                    <p>Built to withstand sun, rain, and dust of the ranch</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h3>Premium Comfort</h3>
+                    <p>Breathable mesh back and adjustable fit for all-day wear</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Lifetime Support</h3>
+                    <p>We stand behind our hats with exceptional customer service</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-stitches"></i>
+                    </div>
+                    <h3>Expert Craftsmanship</h3>
+                    <p>Each hat is carefully constructed with precision stitching</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-earth"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Sustainably sourced materials and ethical manufacturing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Cowboys Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best hat I've ever owned. The leather patch is genuine quality and the fit is perfect for long days on the ranch."</p>
+                    <p class="author">- Jake M., Texas</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I wear my Feox hat every single day. It's durable, looks great, and feels like home."</p>
+                    <p class="author">- Sarah L., Montana</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Worth every penny. The attention to detail on the leather patch is incredible. This is what quality looks like."</p>
+                    <p class="author">- Marcus C., Wyoming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>1-800-FEOX-HAT</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@feoxhats.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Texas, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Feox Hats</h4>
+                    <p>Premium brown trucker hats with authentic leather patches. Born from the ranch, worn worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Feox Hats. All rights reserved. | Built with authentic cowboy spirit.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
